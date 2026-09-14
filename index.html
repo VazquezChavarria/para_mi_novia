@@ -1,38 +1,36 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Feliz primer mes, amor</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;1,9..144,400&family=Jost:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/index_style.css" />
-  </head>
-  <body>
-    <audio id="musica" src="./multimedia/TQM - ND Kobi'  (Video Oficial).mp3" loop></audio>
-    <button id="btn-musica" class="music-toggle" aria-label="Reproducir música">🎵</button>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feliz primer mes, amor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;1,9..144,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/index_style.css">
+</head>
+<body>
 
-    <section class="hero">
-        <div class="stars" id="stars"></div>
-        <div class="hero-content">
-            <p class="eyebrow">14 de septiembre</p>
-            <h1>feliz <em>primer mes</em>,<br>mi vida</h1>
-            <p class="hero-subtitle">Gracias por hacer cada día especial</p>
-        </div>
-        <div class="scroll-cue"></div>
-    </section>
+  <audio id="musica" src="./multimedia/TQM - ND Kobi'  (Video Oficial).mp3" loop></audio>
+  <button id="btn-musica" class="music-toggle" aria-label="Reproducir música">♪</button>
 
-    <section class="carta">
-        <div class="carta-inner">
-            <p class="carta-label">para ti</p>
-            <p>Feliz primer mes amor lalalalalallalalalallalalalallallallalalallalalallalalallalalallaalalalalal</p>
-            <p class="firma">-lupita</p>
-        </div>
-    </section>
+  <section class="hero">
+    <div class="stars" id="stars"></div>
+    <div class="hero-content">
+      <p class="eyebrow">14 de septiembre</p>
+      <h1>feliz <em>primer mes</em>,<br>mi vida</h1>
+      <p class="hero-sub">un mes desde que decidimos caminar juntos. este espacio es para ti, amor.</p>
+    </div>
+    <div class="scroll-cue"></div>
+  </section>
+
+  <section class="carta">
+    <div class="carta-inner">
+      <p class="carta-label">para ti</p>
+      <p>Feliz primer mes, mi vida. Gracias por estar conmigo en diferentes etapas de nuestra vida, y te amo con todo mi ser.</p>
+      <p class="firma">— Lupita</p>
+    </div>
+  </section>
 
   <section class="galeria">
     <div class="galeria-head">
@@ -40,11 +38,11 @@
       <p>espacio para las fotos de estos primeros treinta días</p>
     </div>
     <div class="grid-fotos">
-      <div class="foto"><span>foto 1</span></div>
-      <div class="foto"><span>foto 2</span></div>
-      <div class="foto"><span>foto 3</span></div>
-      <div class="foto"><span>foto 4</span></div>
-      <div class="foto"><span>foto 5</span></div>
+    <img src="./multimedia/descarga.jpeg" alt="Foto 1">
+    <img src="./multimedia/IMG_20260911_134536.jpg" alt="Foto 2">
+    <img src="./multimedia/IMG_20260814_182901.jpg" alt="Foto 3">
+    <img src="./multimedia/yo.jpg" alt="Foto 4">
+    <img src="./multimedia/IMG_20260430_123218.jpg" alt="Foto 5">
     </div>
   </section>
 
@@ -54,13 +52,39 @@
       <p>las canciones de este primer mes</p>
     </div>
     <ol class="lista-canciones">
-      <li class="cancion"><span class="num">01</span><span class="info"><span class="titulo">título de la canción</span><span class="artista">artista</span></span></li>
-      <li class="cancion"><span class="num">02</span><span class="info"><span class="titulo">título de la canción</span><span class="artista">artista</span></span></li>
-      <li class="cancion"><span class="num">03</span><span class="info"><span class="titulo">título de la canción</span><span class="artista">artista</span></span></li>
-      <li class="cancion"><span class="num">04</span><span class="info"><span class="titulo">título de la canción</span><span class="artista">artista</span></span></li>
-      <li class="cancion"><span class="num">05</span><span class="info"><span class="titulo">título de la canción</span><span class="artista">artista</span></span></li>
+      <li class="cancion">
+        <button class="play-cancion" aria-label="Reproducir canción 1">▶</button>
+        <span class="num">01</span>
+        <span class="info"><span class="titulo">Mantecado de coco</span><span class="artista">Álvaro Díaz</span></span>
+        <audio src="./multimedia/Álvaro Díaz - Mantecado De Coco [Official Video].mp3"></audio>
+      </li>
+      <li class="cancion">
+        <button class="play-cancion" aria-label="Reproducir canción 2">▶</button>
+        <span class="num">02</span>
+        <span class="info"><span class="titulo">Cmon</span><span class="artista">Fred again.., Brian Eno, LATIN MAFIA</span></span>
+        <audio src="./multimedia/Fred again.., Brian Eno, LATIN MAFIA - Cmon (LATIN MAFIA & Fred edit).mp3"></audio>
+      </li>
+      <li class="cancion">
+        <button class="play-cancion" aria-label="Reproducir canción 3">▶</button>
+        <span class="num">03</span>
+        <span class="info"><span class="titulo">NADIE MÁS!</span><span class="artista">nsqk</span></span>
+        <audio src="./multimedia/nsqk - NADIE MÁS! (Visualizer).mp3"></audio>
+      </li>
+      <li class="cancion">
+        <button class="play-cancion" aria-label="Reproducir canción 4">▶</button>
+        <span class="num">04</span>
+        <span class="info"><span class="titulo">INAROW62</span><span class="artista">Álvaro Díaz</span></span>
+        <audio src="./multimedia/Alvaro Diaz - INAROW62. (Visualizer).mp3"></audio>
+      </li>
+      <li class="cancion">
+        <button class="play-cancion" aria-label="Reproducir canción 5">▶</button>
+        <span class="num">05</span>
+        <span class="info"><span class="titulo">bby romeo</span><span class="artista">rusowsky y ralphie choo</span></span>
+        <audio src="./multimedia/bby romeo de rusowsky y ralphie choo (letra).mp3"></audio>
+      </li>
     </ol>
   </section>
+
   <section class="cierre">
     <p class="pre">gracias por elegirme, amor</p>
     <h2>que sean muchos meses más juntos</h2>
@@ -71,8 +95,9 @@
     </div>
   </section>
 
-  <footer>Te amo cieloo</footer>
+  <footer>hecho con amor para amor</footer>
 
-    <script src="./js/script.js"></script>
-  </body>
+  <script src="./js/script.js"></script>
+
+</body>
 </html>

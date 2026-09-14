@@ -11,11 +11,11 @@ const starsContainer = document.getElementById('stars');
       s.style.height = size + 'px';
       starsContainer.appendChild(s);
     }
- 
+
     const musica = document.getElementById('musica');
     const btnMusica = document.getElementById('btn-musica');
     let sonando = false;
- 
+
     btnMusica.addEventListener('click', () => {
       if(sonando){
         musica.pause();
@@ -28,4 +28,27 @@ const starsContainer = document.getElementById('stars');
       }
       sonando = !sonando;
     });
- 
+
+    const botonesCanciones = document.querySelectorAll('.play-cancion');
+
+    botonesCanciones.forEach(boton => {
+      const audio = boton.closest('.cancion').querySelector('audio');
+
+      boton.addEventListener('click', () => {
+        const yaSuena = !audio.paused;
+
+        document.querySelectorAll('.cancion audio').forEach(a => a.pause());
+        botonesCanciones.forEach(b => {
+          b.textContent = '▶';
+          b.classList.remove('tocando');
+          b.setAttribute('aria-label', b.getAttribute('aria-label').replace('Pausar', 'Reproducir'));
+        });
+
+        if(!yaSuena){
+          audio.play();
+          boton.textContent = '❙❙';
+          boton.classList.add('tocando');
+          boton.setAttribute('aria-label', boton.getAttribute('aria-label').replace('Reproducir', 'Pausar'));
+        }
+      });
+    });
