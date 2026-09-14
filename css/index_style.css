@@ -195,14 +195,14 @@
 
   .foto{
     aspect-ratio: 4/5;
-    border: 1px dashed rgba(243,233,242,0.25);
+    border: 1px solid rgba(243,233,242,0.12);
     background: var(--color3);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    padding: 1rem;
-    transition: border-color 0.35s ease, background 0.35s ease;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+    transition: border-color 0.35s ease, filter 0.35s ease;
   }
 
   .grid-fotos .foto:nth-child(1),
@@ -213,13 +213,7 @@
 
   .foto:hover{
     border-color: var(--color1);
-    background: var(--color2);
-  }
-
-  .foto span{
-    font-size: 0.8rem;
-    color: var(--ink-soft);
-    font-style: italic;
+    filter: brightness(1.08);
   }
 
   @media (max-width: 640px){
